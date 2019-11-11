@@ -18,7 +18,7 @@ class _TabNagivtorState extends State<TabNagivtor> {
       body: Container(
         decoration: BoxDecoration(
           gradient: LinearGradient(
-              colors: [Colors.yellow, Colors.blue],
+              colors: [Colors.green, Colors.grey],
               begin: Alignment.topCenter,
               end: Alignment.bottomCenter),
         ),
@@ -26,7 +26,6 @@ class _TabNagivtorState extends State<TabNagivtor> {
           child: ContainerView(
             containerPageGo: containerPageGo,
             onPageChanged: (int index) {
-
               setState(() {
                 currenIndex = index;
               });

@@ -71,10 +71,7 @@ class MainApp extends StatelessWidget {
 //          primaryColor: Colors.blue
 //        ),
         home: Scaffold(
-            appBar: AppBar(
-              title: Text('flutter练习！'),
-              centerTitle: true,
-            ),
+
             body: TabNagivtor()
 //              child: GridView(
 //                gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
