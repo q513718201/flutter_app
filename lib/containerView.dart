@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_app/CardCommend.dart';
 import 'package:flutter_app/CustomBar.dart';
+import 'package:flutter_app/idcard/CardTwo.dart';
 
 class ContainerView extends StatefulWidget {
   final ValueChanged<int> onPageChanged;
@@ -53,9 +54,9 @@ class _ContainerState extends State<ContainerView> {
             onPageChanged: widget.onPageChanged,
             children: <Widget>[
               wropItem(CardCommend()),
+              wropItem(CardTwo()),
               wropItem(CardCommend()),
-              wropItem(CardCommend()),
-              wropItem(CardCommend())
+              wropItem(CardTwo())
             ],
           ),
         )
@@ -65,7 +66,7 @@ class _ContainerState extends State<ContainerView> {
 
   Widget wropItem(Widget widget) {
     return Padding(
-      padding: EdgeInsets.all(10),
+      padding: EdgeInsets.all(5),
       child: widget,
     );
   }

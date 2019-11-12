@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app/BaseCard.dart';
 
-class CardCommend extends BaseCard {
+class CardTwo extends BaseCard {
   @override
-  BaseCardState createState() => _CardCommendState();
+  BaseCardState createState() => _CardTwoState();
 }
 
-class _CardCommendState extends BaseCardState {
+class _CardTwoState extends BaseCardState {
   @override
   void initState() {
-      currentColor=Color(0xffb99444);
+      currentColor=Color(0xffff0000);
     super.initState();
   }
 
@@ -21,7 +21,7 @@ class _CardCommendState extends BaseCardState {
   @override
   Widget subTitle(String s) {
     // TODO: implement subTitle
-    return super.subTitle('小豪牛逼,你这么叼 你妈妈知道吗');
+    return super.subTitle('美女共观赏');
   }
 
   @override
@@ -30,7 +30,7 @@ class _CardCommendState extends BaseCardState {
     return Expanded(
       child: Container(
         margin: EdgeInsets.only(top: 20),
-        child: Image.network('https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1574143982&di=0bb1bd70123aa63eeb2ae5e5a6ef4af7&imgtype=jpg&er=1&src=http%3A%2F%2Fimg.qq745.com%2Fuploads%2Fallimg%2F160818%2F11-160QPZ339-50.jpg',fit:BoxFit.cover ,),
+        child: Image.network('https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1573549265472&di=e8d9799285603eb4033c6f3191a24ee9&imgtype=0&src=http%3A%2F%2Fimg.11665.com%2Fimg4_p3%2Fi4%2F921963549%2FTB2XEPVd4qK.eBjSZJiXXaOSFXa_%2521%2521921963549.jpg',fit:BoxFit.cover ,),
       ),
     );
   }
