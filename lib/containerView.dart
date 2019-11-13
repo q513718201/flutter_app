@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_app/CardCommend.dart';
 import 'package:flutter_app/CustomBar.dart';
+import 'package:flutter_app/idcard/CardThree.dart';
 import 'package:flutter_app/idcard/CardTwo.dart';
 
 class ContainerView extends StatefulWidget {
@@ -55,7 +56,7 @@ class _ContainerState extends State<ContainerView> {
             children: <Widget>[
               wropItem(CardCommend()),
               wropItem(CardTwo()),
-              wropItem(CardCommend()),
+              wropItem(CardThree()),
               wropItem(CardTwo())
             ],
           ),

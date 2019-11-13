@@ -24,10 +24,13 @@ class BaseCardState extends State<BaseCard> {
     return Padding(
       padding: EdgeInsets.fromLTRB(20, 20, 0, 0),
       child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
          Row(
+           crossAxisAlignment: CrossAxisAlignment.end,
            children: <Widget>[
              topTitle(''),
+             topTitle2('')
            ],
          ),
           subTitle(''),
@@ -43,7 +46,7 @@ class BaseCardState extends State<BaseCard> {
 
   Widget subTitle(String s) {
     return Padding(
-      padding: EdgeInsets.only(top: 5),
+      padding: EdgeInsets.only(bottom: 5),
       child: Text(
         s,style: TextStyle(fontSize: 11,color: currentColor),
       ),
@@ -55,4 +58,9 @@ class BaseCardState extends State<BaseCard> {
       s,
     );
   }
+
+  topTitle2(String s) {
+    return Container();
+  }
+
 }

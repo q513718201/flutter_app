@@ -44,8 +44,8 @@ class _TabNagivtorState extends State<TabNagivtor> {
           },
           type: BottomNavigationBarType.fixed,
           items: [
-            _bottomIcon('商城', Icons.folder, 0),
-            _bottomIcon('购物车', Icons.explore, 1),
+            _bottomIcon('本周', Icons.folder, 0),
+            _bottomIcon('分享', Icons.explore, 1),
             _bottomIcon('免费', Icons.data_usage, 2),
             _bottomIcon('我的', Icons.person, 3),
           ]),
